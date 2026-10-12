@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .container {
+            display: flex;
+            /* Mengaktifkan Flexbox */
+            gap: 10px;
+            /* Memberi jarak antar elemen */
+            background-color: #f0f0f0;
+            padding: 10px;
+        }
+
+        .item {
+            flex: 1;
+            background-color: #007bc4;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Elemen pertama mengambil ruang lebih besar */
+        .item:first-child {
+            flex: 2;
+            background-color: #ff5722;
+            /* Warna berbeda untuk pembeda */
+        }
+    </style>
+</head>
+
+<body>
+    <div id="kotakHitam">
+        <div id="kotakMerah"></div>
+        <div id="kotakKuning"></div>
+        <div id="kotakBiru"></div>
+    </div>
+
+    <div class="container">
+        <div class="item">Elemen Pertama (Flex: 2)</div>
+        <div class="item">Elemen Kedua (Flex: 1)</div>
+        <div class="item">Elemen Ketiga (Flex: 1)</div>
+    </div>
+
+
+
+</body>
+
+</html>
